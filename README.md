@@ -13,6 +13,7 @@ The requirement is to use the actor model of Akka on F#, in order to create mult
 # Example
 By giving input "4", the user defines a bitcoin to be any string whose SHA256 hash has 4 leading zeros.
 For example, the string dmelissourgos;05cVw3 is hashed to 00007A2AFF860430139252596049973CDB3310290B3AB5F49D59B56FA623BD44.
+To check for correctness use https://xorbin.com/tools/sha256-hash-calculator
 
 # Implementation
 The program takes the input from the user and checks for correctness. It uses this input to check for possible bitcoins found.
