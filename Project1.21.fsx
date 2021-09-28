@@ -17,26 +17,6 @@ let numberOfWorkers = 8
 let chars = ["0";"1";"2";"3";"4";"5";"6";"7";"8";"9";"a";"b";"c";"d";"e";"f";"g";"h";"i";"j";"k";"l";"m";"n";"o";"p";"q";"r";"s";"t";"u";"v";"w";"x";"y";"z";"A";"B";"C";"D";"E";"F";"G";"H";"I";"J";"K";"L";"M";"N";"O";"P";"Q";"R";"S";"T";"U";"V";"W";"X";"Y";"Z"]
 let mutable currentIndex = 0
 
-(*
-//Convert base62 string to integer
-let rec toInt x =
-    let bse = List.length chars
-    let mut = pown bse (String.length x - 1)
-
-    if x = "" then 
-        0 
-    else
-        let fc = string (x.[0])
-        let index = List.findIndex (fun e -> e = fc) chars
-        (toInt (x.[1..])) + (index * mut)
-
-for x in Seq.take blockSize (Seq.initInfinite toBase) do
-    printfn "%s" x
-
-let addBlockSize previousStartingPoint blockSize =
-    toBase ((toInt previousStartingPoint) + blockSize)
-*)
-
 //Read the number of leading zeros from the user
 printfn "Enter the number of zeros: "
 let input = Console.ReadLine()
